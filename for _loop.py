@@ -27,3 +27,16 @@ for i in drink:
     print("i want to drink ", i)  
     
 """
+"""
+drink = ["water", "soda", "tea","milk"]
+for i in drink:
+    if i == "soda":
+        continue
+    print("i want to drink ", i)
+"""
+
+"""
+drink = ["water", "soda", "tea","milk"]
+for index , i in enumerate(drink):
+    print("option", index, i)
+"""
