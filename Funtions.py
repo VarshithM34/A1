@@ -1,52 +1,128 @@
-def user():
-    print("hell no ")
-user()
+'''def app():
+    print("ooh ya")
+app()
 
-def user(name , age):
-    print(f"my name is{  name} and age is {age}")
-    
-user("leo",19)
+def app(name, toll):
+    print(f"hey {name}, {toll}")
+app("atul","mg")
 
-def cal_tax(prize):
-    tax = prize + 100
+def cal_tax(price):
+    tax = price * 0.05
     return tax
-
-tol_tax = cal_tax(20)
+tol_tax = cal_tax(100)
 print(tol_tax)
 
-def make_moive(genor = "action" , hit = True):
-    hit = "hit" if hit else "flop"
-    print(f"it is a { genor} moive and it is {hit}")
-    
-make_moive("drama",True)
 
-def test_func():
-    pass
+def cal_age(age):
+    age = age + 5
+    return age
+tol_age = cal_age(10)
+print(tol_age)
 
-#print(dir(test_func))
-#['__annotate__', '__annotations__', '__builtins__', '__call__', '__class__', '__closure__',  
-#'__code__', '__defaults__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', 
-# '__format__', '__ge__', '__get__', '__getattribute__', '__getstate__', '__globals__', '__gt__',
-# '__hash__', '__init__', '__init_subclass__', '__kwdefaults__', '__le__','__lt__', '__module__',
-# '__name__', '__ne__', '__new__', '__qualname__', '__reduce__','__reduce_ex__', '__repr__', 
-# '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__type_params__']
 
-def job(name, age ,role):
-    return f"Name : {name}, Age : {age}, Role : {role}"
 
-print(job("varshit",21,"director"))
+def tea(size, sugar = True):
+    sugar = "with sugar" if sugar else "without sugar"
+    print(f"this is a {size} tea and {sugar}")
 
-def num(a,b,c):
-    return f"A:{a},B:{b},C:{c}"
-print(num("app","le","apple"))
+tea("large", False)
 
-def num(a, b, c):
+
+
+def profile(name , age , city):
+    return {name} , {age} , {city}
+print(profile("atul", 19 , "tenali"))
+
+
+
+def profile(name , age , city):
+    return f"name {name} age {age} city {city}"
+print(profile("atul", 19 , "tenali")) 
+
+
+
+def num(a , b , c):
     return a + b + c
-   
-print(num(a=10, b=34, c=90)) 
+print(num(10 , 20 , 30)) 
 
-def num1(key1 = 10 , key2 = "rai" , key3 = "jai"):
-    return f"key1: {key1}, key2 : {key2}, key3 : {key3}"
-print(num1())
 
+
+def person(fav_num , age , year_born):
+    lucy_num = fav_num - age + year_born
+    return lucy_num
+print(person(18, 21 , 2004))
+
+
+#keyword argument
+def person(fav_num , age , year_born):
+    lucy_num = fav_num - age + year_born
+    return lucy_num
+print(person(age = 18,fav_num= 21 ,year_born = 2004))
+
+
+
+#lambda
+
+pit = lambda x: x+ x
+print(pit(1))
+
+
+
+
+products = [("Laptop", 1200), ("Mouse", 25), ("Monitor", 300)]
+
+products.sort(key=lambda item: item[1])
+
+print(products)
+
+
+#map
+rupe = [1000, 50000, 20]
+yun = list(map(lambda x : x * 0.92 , rupe))
+print(yun)
+
+#filter
+age = [1,18,31,15]
+
+major = list(filter(lambda x : x >= 18 , age))
+minor = list(filter(lambda x : x <18 , age ))
+print(major)
+print(f"minors  {minor}")
+
+
+def convert_currency(amount , exchange_rate):
+    return amount * exchange_rate
+print(convert_currency(100 , 20))
+
+
+prices = [10, 25, 50, 100]
+total_cost = list(map(lambda x : x + 5 , prices))
+print(total_cost)
+
+def clean_text(raw_data):
+    return raw_data.strip().lower()
+print(clean_text("  Varshith"))
     
+
+
+
+transactions = [("Keyboard", 120), ("Mouse", 20), ("Monitor", 350), ("Cable", 8)]
+expensive_items = list(filter(lambda x : x[1] > 50 , transactions))
+print(expensive_items)
+
+
+def tol_sales(sales_lists):
+    
+    total = 0 
+    for i in sales_lists:
+        total += i
+    return total
+    
+print(tol_sales([100,250,50,400]))
+'''
+
+def clean_database(dirty_list):
+    dirty_list = dirty_list.strip().lower()
+    return dirty_list
+messy_names = ["  ALICE ", " bob   ", "  ChArLiE  "]
+print(clean_database(messy_names))
