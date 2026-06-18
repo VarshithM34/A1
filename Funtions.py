@@ -119,10 +119,16 @@ def tol_sales(sales_lists):
     return total
     
 print(tol_sales([100,250,50,400]))
-'''
+
 
 def clean_database(dirty_list):
-    dirty_list = dirty_list.strip().lower()
-    return dirty_list
+    list1 = [item.strip().lower() for item in dirty_list]
+    return list1
 messy_names = ["  ALICE ", " bob   ", "  ChArLiE  "]
 print(clean_database(messy_names))
+'''
+
+
+customer_ages = [12, 25, 47, 15, 34, 60, 9]
+target_group = list(filter(lambda x : x >= 18 and x < 50, customer_ages))
+print(target_group)
