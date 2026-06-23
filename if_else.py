@@ -17,7 +17,7 @@ elif Role == "allrounder":
 else:
     print("your not a Player")
     """
-Age = int(input("enter your age :"))
+Age = int(input("enter your age :"))#nested if
 if Age >= 18:
     print("your welcome")
     if Age >= 50:

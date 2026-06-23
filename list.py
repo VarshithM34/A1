@@ -15,12 +15,12 @@ print(list.remove("banana"))
 print(list.append("strawberry"))
 print(list.extend(list1))
 list.sort()
-
 print(list)
+'''
 list2 = list.copy()
 print(list2)
 list3 = list1 + list2
-print(list3)
+print(list3)'''
 
 #formatting list
 

@@ -10,6 +10,6 @@ name = ('John', 'Doe', 30, 'Engineer', 'Doe')
 print(name.count('Doe'))
 print(name.index('Doe'))
 
-city = ('New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix')
+city = ('New York', 'Los Angeles','Chicago', 'Houston', 'Phoenix')
 usa, canada, mexico, brazil, argentina = city
 print(f"USA: {usa}, Canada: {canada}, Mexico: {mexico}, Brazil: {brazil}, Argentina: {argentina}")
