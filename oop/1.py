@@ -37,9 +37,9 @@ print(s2.time)
         print("crete")#python create it automatically and it won't print
     date = 7 #will be same for s2 and s3 #cls attr
     
-    def __init__(self, age , time):#parameterized constructors -  contains tow or more parameter
-        self.age = age#obj attr
-        self.time = time#obj attr > cls attr
+    def __init__(self, age , time): #parameterized constructors -  contains tow or more parameter
+        self.age = age #obj attr
+        self.time = time #obj attr > cls attr
         print(self)
 
         
