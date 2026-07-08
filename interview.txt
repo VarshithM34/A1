@@ -1,0 +1,54 @@
+decorator - it a design pattern that allows us to modify , wrap or extend the 
+            dehaivor of the function or method without perminent changeing its 
+            sorce code.
+A decorator is simply a function that takes another function as an argument, 
+adds some behavior inside a nested "wrapper" function, and returns that wrapper.
+
+
+class - blueprint - defines struture
+instance - object in it. - it is object created from specific class.
+
+instance method - it belongs to instance class , it can be modify and accesse the data 
+                   inside the object (self)
+
+
+class method - it belongs to class itself, data can be modifyed or access at state of class.
+                class Car:
+                    wheels = 4  # Class variable shared by all cars
+
+                    @classmethod
+                    def change_wheels(cls, new_amount):
+                        cls.wheels = 
+
+
+static method - it is class's namespace for oragnizational purposes , it cannot 
+                be modifyed or accesed at instance or class state .
+class Car:
+    @staticmethod
+    def kph_to_mph(kph):
+        return kph * 0.621371  # Independent calculation
+
+#encapsulation - wrapping data and functions in to a single unit(obj)
+
+#abstraction - means hidden
+# hiding implementation details of a cls and only showing essential features to 
+user.
+
+constructor - all cls have fn called __init_(), which is always executed when
+              cls is being initiated.
+
+#self parameter is a reference to current instance of cls, and is used to 
+    access variables that belongs to cls.
+
+
+seek() is a method used to change the position of the file pointer (or cursor) 
+       to a specific place within a file.
+       0 - default , beginging 
+       1 = current position
+       2 = end position
+
+
+tell() is a method that returns the current position of the file pointer 
+        (or cursor) within a file.
+
+

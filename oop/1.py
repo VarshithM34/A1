@@ -16,7 +16,7 @@ print(s1.age)
 '''#__init__ constructor
 class st2:
     name = "krishna"
-    def __init__(self, age , time):#self parameter is a reference to current instance of cls, and is used to access variables that belongs to cls
+    def __init__(self, age , time):#self parameter is a reference to current instance of cls, and is used to access variables that belongs to cls.
         self.age = age
         self.time = time
         print(self)
