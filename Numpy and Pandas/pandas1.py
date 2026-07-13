@@ -57,14 +57,91 @@ print(df)
 '''
 
 df = pd.read_csv(r"C:\Users\len 25in\Documents\A1\Datasets\titanic.csv")
-#print(df.to_string())#to print all values
-'''print(df)
+'''#print(df.to_string())#to print all values
+print(df)
 #selection By column
 print(df["Survived"])
 #print(df["Survived"].to_string())#to print all values
+'''
 '''
 #selection by rows
 #print(df.loc[1])
 #print(df.iloc[0:11])#firsr 10 rows
 #print(df.iloc[0:11:2])#first 10 and skipping 2
 print(df.iloc[0:11:2,0:3])#in first 10 and even from 0 to 3
+
+'''
+#filtering
+
+#print(df)
+
+'''sur = df[df["Survived"] >= 1]
+print(sur)
+idi = df[df["PassengerId"] <= 896]
+print(idi)
+sur_idi = df[(df["Survived"] >= 1) | 
+             (df["PassengerId"] <= 896)]# | is or operator
+print(sur_idi)
+sur_idi1 = df[(df["Survived"] >= 1) & 
+             (df["PassengerId"] <= 896)]# & is and operator
+print(sur_idi1)'''
+
+
+#aggregate function
+#they a set of values into a single summary value
+#used for summarize and analyze data
+#often used with groupby() func
+
+#whole dataset
+'''print(df.mean(numeric_only=True))
+print(df.sum(numeric_only=True))
+print(df.min(numeric_only=True))
+print(df.max(numeric_only=True))
+print(df.count())'''
+
+
+#single column
+
+'''print(df["PassengerId"].mean())
+print(df["PassengerId"].sum())
+print(df["PassengerId"].min())
+print(df["PassengerId"].max())
+print(df["PassengerId"].count())'''
+
+#groupby
+'''group = df.groupby("Survived")
+print(group["Survived"] .mean())
+print(group["Survived"] .sum())
+print(group["Survived"] .max())
+print(group["Survived"] .min())
+print(group["Survived"] .count())
+'''
+
+
+#datacleaning
+#droping irrelevant colums
+#df = df.drop(columns=["PassengerId"])
+#print(df)
+
+#handle missing value
+#df = df.dropna(subset=["Survived"])
+#replace missing value
+#df = df.fillna({"Survived":"None"})
+#print(df)
+
+#fix inconsistent values
+'''df["Survived"] = df["Survived"].replace({0:2})
+print(df)'''
+
+#standardize text
+#df["PassengerId"] = df["PassengerId"].str.lower()
+
+#fix data types
+
+'''df["Survived"] = df["Survived"].astype(bool)
+print(df)'''
+
+#remove duplicate values
+
+df = df.drop_duplicates()
+print(df)

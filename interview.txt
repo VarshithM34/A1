@@ -7,7 +7,6 @@ adds some behavior inside a nested "wrapper" function, and returns that wrapper.
 
 class - blueprint - defines struture
 instance - object in it. - it is object created from specific class.
-
 instance method - it belongs to instance class , it can be modify and accesse the data 
                    inside the object (self)
 
